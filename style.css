@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ffff00;
+  --bg-dark: #1a1a1a;
+  --bg-panel: rgba(0, 0, 0, 0.9);
+  --text: #ffffff;
+  --text-dim: #aaaaaa;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: var(--bg-dark);
+  font-family: 'Noto Serif KR', serif;
+  color: var(--text);
+}
+
+canvas {
+  display: block;
+}
+
+/* ========== 정보 오버레이 ========== */
+#info-overlay {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#info-toggle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  background: var(--bg-panel);
+  color: var(--primary);
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(255, 255, 0, 0.3);
+}
+
+#info-toggle:hover {
+  background: var(--primary);
+  color: var(--bg-dark);
+  transform: rotate(90deg);
+}
+
+#info-panel {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 320px;
+  background: var(--bg-panel);
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+#info-panel.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+#info-panel h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+#info-panel p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-dim);
+  margin-bottom: 15px;
+}
+
+#info-panel hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 0, 0.2);
+  margin: 15px 0;
+}
+
+#info-panel ul {
+  list-style: none;
+  margin: 15px 0;
+}
+
+#info-panel li {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+#info-panel .tech {
+  font-size: 12px;
+  color: var(--text-dim);
+  line-height: 1.8;
+}
+
+/* 링크 버튼 */
+.links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.links a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 15px;
+  background: rgba(255, 255, 0, 0.1);
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.links a:hover {
+  background: var(--primary);
+  color: var(--bg-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 255, 0, 0.4);
+}
+
+/* ========== 오디오 프롬프트 ========== */
+#audio-prompt {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-panel);
+  color: var(--primary);
+  padding: 12px 24px;
+  border-radius: 25px;
+  border: 2px solid var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 999;
+  animation: pulse 2s ease-in-out infinite;
+  box-shadow: 0 4px 20px rgba(255, 255, 0, 0.3);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.05); }
+}
+
+/* 오디오 활성화 후 숨기기 */
+body.audio-active #audio-prompt {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+/* ========== 반응형 디자인 ========== */
+@media (max-width: 768px) {
+  #info-overlay {
+    top: 15px;
+    right: 15px;
+  }
+
+  #info-toggle {
+    width: 44px;
+    height: 44px;
+    font-size: 20px;
+  }
+
+  #info-panel {
+    width: calc(100vw - 30px);
+    max-width: 320px;
+    right: -5px;
+  }
+
+  #info-panel h1 {
+    font-size: 20px;
+  }
+
+  #audio-prompt {
+    font-size: 12px;
+    padding: 10px 20px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #info-panel {
+    padding: 20px;
+  }
+
+  #info-panel h1 {
+    font-size: 18px;
+  }
+
+  #info-panel p,
+  #info-panel li {
+    font-size: 12px;
+  }
+
+  .links a {
+    font-size: 11px;
+    padding: 8px 12px;
+  }
+}
+
+/* ========== 접근성 ========== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* 다크모드 지원 */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-dark: #f0f0f0;
+    --bg-panel: rgba(255, 255, 255, 0.95);
+    --text: #1a1a1a;
+    --text-dim: #666666;
+  }
+}

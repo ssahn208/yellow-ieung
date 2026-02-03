@@ -1,0 +1,37 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 에디터
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 임시 파일
+*.tmp
+*.temp
+*.log
+
+# 녹화 파일 (용량 큼)
+*.webm
+*.mp4
+*.mov
+
+# 백업 파일
+*.bak
+*-backup.*
+*-old.*
+
+# 테스트/개발용 파일
+test/
+draft/
+wip/
