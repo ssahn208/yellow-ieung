@@ -10,7 +10,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 
 **1. 음성학적 (Phonetic)**
 - **초성**: 침묵 (mute) - 소리 없는 자음
-- **중/종성**: 'NG' 음 - 울림소리 (resonance)
+- **중/종성**: 'Ng' 음 - 울림소리 (resonance)
 - → **침묵에서 소리로의 전환**을 상징
 
 **2. 시각적 (Visual)**
