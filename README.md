@@ -4,7 +4,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 
 ## 🎨 작품 설명
 
-28개의 노란 원(ㅇ)이 파란 우주 공간에서 서로 다른 속도와 방향으로 회전하며, 중심을 지날 때마다 D minor 음계의 부드러운 피아노 음을 생성합니다.
+28개의 노란 원(ㅇ)이 푸른 우주 공간에서 서로 다른 속도와 방향으로 회전하며, 중심을 지날 때마다 D minor 음계의 부드러운 피아노 음을 생성합니다.
 
 ### 핵심 컨셉: ㅇ (이응)의 삼중 의미
 
@@ -20,7 +20,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 - → **빛과 소리의 시각화**
 
 **3. 우주론적 (Cosmic)**
-- **동양 철학**: 원은 우주(宇宙)의 상징
+- **동양 철학**: 원은 우주의 상징
 - **28수 (二十八宿)**: 동양 천문학의 28개 별자리
 - **훈민정음 28자**: 자음 17자 + 모음 11자 (1443년 창제 당시)
 - **무한**: 시작도 끝도 없는 순환
@@ -36,8 +36,8 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 
 **Grayish Blue (회청색 배경):**
 - 우주의 깊이와 무한함
-- 명상적이고 고요한 공간
-- 노란 이응들을 돋보이게 하는 캔버스
+- 고요한 명상적 공간
+- '노란 이응'들을 돋보이게 하는 캔버스
 
 ### 에릭 사티의 미니멀리즘
 
@@ -45,7 +45,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 - 단순한 형태(원)에서 생성되는 풍부한 음향
 - 반복과 변주를 통한 명상적 경험
 - 느린 템포와 공간감
-- "침묵도 음악이다" - 이응의 mute에서 'NG' 소리로
+- "침묵도 음악이다" - 이응의 mute에서 'Ng' 소리로
 
 ---
 
@@ -54,10 +54,10 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 ### 비주얼
 - **p5.js 1.9.4**: Canvas 기반 2D 렌더링 엔진
 - **HTML5 Canvas API**: 커스텀 글로우 효과 (shadowBlur, shadowColor)
-- **삼각함수**: 타원 궤도 시뮬레이션 (천체 물리학 기반)
-- **한글 타이포그래피**: 'ㅇ' 형태를 기반으로 한 비주얼 언어
+- **삼각함수**: 타원 궤도 시뮬레이션 (천체물리학 기반)
+- **한글 타이포그라피**: 'ㅇ' 형태를 바탕으로 한 시각 언어
 - **Color Palette**: 
-  - Yellow (#ffff00) - 이응 원들
+  - Yellow (#ffff00) - 이응
   - Grayish Blue (rgba(84,119,146,25)) - 우주 배경
 
 ### 오디오
@@ -65,7 +65,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
   - OscillatorNode (사인파 생성기)
   - GainNode (ADSR 엔벨로프)
   - BiquadFilterNode (로우패스 필터, 1200Hz)
-- **D minor modal scale**: 12음 기반 미니멀 멜로디 시스템
+- **D minor modal scale**: 12음 바탕 미니멀 멜로디 시스템
 - **확률적 화성**: 3도(40%), 5도(25%) 자동 생성
 
 ### 인터랙션
@@ -77,7 +77,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 ## 🖱️ 인터랙션
 
 - **클릭**: 오디오 활성화 (침묵 → 소리)
-- **관찰**: 노란 별들의 궤도와 생성되는 음의 패턴 감상
+- **관찰**: 노란 별들의 궤도와 생성되는 소리 패턴 감상
 - **반응형**: 모든 디바이스에서 작동
 
 ---
@@ -258,7 +258,7 @@ MIT License - 자유롭게 사용, 수정, 배포 가능합니다.
 
 ---
 
-**Created by Ahn** | 2026
+**Created by Ahn Sang-soo | 2026
 
 **Tags**: #YellowIeung #GenerativeArt #KoreanTypography #Hangul #p5js #WebAudio #ErikSatie #InteractiveArt #GlowingStars #Minimalism
 
