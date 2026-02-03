@@ -22,7 +22,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 **3. 우주론적 (Cosmic)**
 - **동양 철학**: 원은 우주(宇宙)의 상징
 - **28수 (二十八宿)**: 동양 천문학의 28개 별자리
-- **한글 28자모**: 자음 14개 + 모음 14개 = 28
+- **훈민정음 28자**: 자음 17자 + 모음 11자 (1443년 창제 당시)
 - **무한**: 시작도 끝도 없는 순환
 - → **우주의 영원한 리듬**
 
@@ -87,7 +87,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 ### 애니메이션 구조
 - **28개 독립 궤도**: 각 노란 원(ㅇ)은 고유한 회전 방향과 속도
   - 28수 (二十八宿): 동양 천문학의 28개 별자리
-  - 한글 28자모: 자음 14 + 모음 14
+  - 훈민정음 28자: 자음 17 + 모음 11 (1443년 창제)
   - 홀수 번째: 시계방향 (dir = 1)
   - 짝수 번째: 반시계방향 (dir = -1)
 - **타원 궤도**: `rx = 250 + i * 20`, `ry = 120 + i * 10`
@@ -150,7 +150,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 | 동양 (이응 ㅇ) | 서양 (사티) | 작품 (Yellow Ieung) |
 |--------------|------------|-------------------|
 | 28수 (二十八宿) | 영원 회귀 | 28개 궤도 순환 |
-| 28자모 (14+14) | 미니멀리즘 | 어둠 속의 빛 |
+| 훈민정음 28자 (17+11) | 미니멀리즘 | 어둠 속의 빛 |
 | 천원지방 | Gymnopédies | 우주의 노란 별들 |
 | 빛 = 소리 | 침묵 = 음악 | 침묵→소리 전환 |
 
@@ -161,15 +161,18 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 - 중국, 한국, 일본의 전통 천문학 체계
 - 4방위 × 7수 = 28개 별자리
 
-**한글:**
-- **28자모**: 자음 14개 + 모음 14개
-- 훈민정음 창제 당시의 완전한 체계
-- ㅇ (이응)은 28자모 중 하나
+**훈민정음 (1443):**
+- **28자**: 자음 17자 + 모음 11자
+- 자음 17: ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎ ㆁㆆㅿ
+- 모음 11: ㅏㅑㅓㅕㅗㅛㅜㅠㅡㅣ ㆍ(아래아)
+- 세종대왕이 창제한 완전한 문자 체계
 
-**수학적 의미:**
-- 완전수(Perfect number): 1+2+4+7+14=28
-- 자기 자신을 제외한 약수의 합이 자신과 같음
-- 우주의 조화와 완전함을 상징
+**완전수 (Perfect Number):**
+- **정의**: 자기 자신을 제외한 약수의 합이 자신과 같은 수
+- **28의 약수**: 1, 2, 4, 7, 14, 28
+- **계산**: 1 + 2 + 4 + 7 + 14 = 28 ✓
+- **희귀성**: 28은 두 번째 완전수 (첫 번째는 6)
+- **의미**: 고대 그리스 피타고라스 학파에서 우주의 조화와 완전함을 상징
 
 ---
 
@@ -177,7 +180,7 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 
 ![Yellow Ieung (ㅇ) - Korean Typography as Glowing Stars](preview.png)
 
-*28 glowing yellow circles representing the Korean letter 'ㅇ' (ieung), 28 lunar mansions (二十八宿), and 28 Hangul letters - from silence to sound, from darkness to light*
+*28 glowing yellow circles representing the Korean letter 'ㅇ' (ieung), 28 lunar mansions (二十八宿), and 28 Hunminjeongeum letters (17 consonants + 11 vowels) - from silence to sound, from darkness to light*
 
 ---
 
@@ -207,8 +210,9 @@ Interactive generative art exploring Korean letter 'ㅇ' (ieung) as glowing yell
 
 4. **28은 왜 완전한가?**
    - 28수: 동양 천문학의 완전한 체계
-   - 28자모: 한글의 완전한 체계
-   - 완전수: 1+2+4+7+14=28
+   - 훈민정음 28자: 한글의 원래 완전한 체계
+   - 완전수: 1+2+4+7+14=28 (약수의 합)
+   - 우주의 조화와 균형을 수학적으로 표현
 
 ---
 
