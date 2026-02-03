@@ -39,7 +39,7 @@ function setupAudio() {
   
   // 오디오 프롬프트 숨기기
   document.body.classList.add('audio-active');
-  console.log("🎵 Audio activated - Yellow stars begin to sing");
+  console.log("🎵 Audio activated - 28 yellow stars begin to sing");
 }
 
 function mousePressed() {
@@ -63,12 +63,13 @@ function draw() {
   noStroke();
   colorMode(RGB);
 
-  for (let i = 0; i < 29; i++) {
+  // 28개의 별 (28수, 28자모)
+  for (let i = 0; i < 28; i++) {
     let dir = i % 2 === 0 ? 1 : -1;
-    let angle = TWO_PI / 29 * i + frameCount * 0.001 * dir;
+    let angle = TWO_PI / 28 * i + frameCount * 0.001 * dir;
     let rx = 250 + i * 20;
     let ry = 120 + i * 10;
-    let tilt = i * PI / 29;
+    let tilt = i * PI / 28;
     let ox = cos(angle) * rx;
     let oy = sin(angle) * ry;
     let x = cx + ox * cos(tilt) - oy * sin(tilt);
